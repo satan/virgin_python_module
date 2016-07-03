@@ -1,0 +1,91 @@
+{{> python_topbar }}
+{{> python_sidebar_execute }}
+
+<section class='inner_content' id='settings-container'>
+	
+	{{#if execute}}
+
+		{{#ifCond execute '==' 'argumental' }}
+
+			<h4>Run Python With Arguments</h4>
+			<hr>
+			<article id="applyform">
+				<label for="name-cg">
+					Argument:
+				</label>
+				<nav class='opt_main' role="select">
+					<select name="gather_option">
+						<option value="option_a">Option A</option>
+						<option value="option_b">Option B</option>
+					</select>
+				</nav>
+				<p>
+					<i>
+					Option A returns Letters
+					</i>
+					<br>
+					<i>
+					Option B returns Numbers
+					</i>
+				</p>
+				<div>
+					<div class='button btn_gather full' data-run='argumental'>
+						Execute Argumental
+					</div>
+				</div>
+
+				<div class="alert inline-alert hide"></div>
+
+				<div class="progress">
+					<div class='bar'></div>
+				</div>
+
+				<hr>
+				
+				<div class='results'></div>
+
+			</article>
+
+		{{/ifCond}}
+		{{#ifCond execute '==' 'plain' }}
+		
+			<h4>Run Python</h4>
+			<hr>
+			<article id="applyform">
+
+				<div>
+					<div class='button btn_gather full' data-run='plain'>
+						Execute Plain
+					</div>
+				</div>
+
+				<p>
+					<i>
+					Returns Letter and Number
+					</i>
+				</p>
+
+				<div class="alert inline-alert hide"></div>
+
+				<div class="progress">
+					<div class='bar'></div>
+				</div>
+
+				<hr>
+
+				<div class='results'></div>
+
+			</article>
+		
+		{{/ifCond}}
+		
+		
+	{{else}}
+
+		<p>Welcome to your Python pannel</p>
+	
+	{{/if}}
+
+</section>
+
+<script type='text/javascript' src='/control_execute.js'></script>

@@ -1,0 +1,161 @@
+/* MAX */
+
+@media only screen and (max-width: 1300px) {
+
+	main section.inner_content {
+		/**/
+		padding: 1em 2em !important;
+		/**/
+	}
+	
+	.tmp_welcome #login-container, .tmp_welcome #account-form-container {
+		
+		width: 80% !important;
+	}
+
+	.tmp_talker #messages {
+		/**/
+		font-size: 0.7em;
+		/**/
+	}
+	.tmp_talker #messages header{
+		/**/
+		font-size: 1.1em;
+		/**/
+	}
+	.tmp_talker #messages header time{
+		/**/
+		font-size: 1.2em;
+		/**/
+	}
+	.tmp_talker #messages header .talk_name{
+		/**/
+		font-size: 1.4em;
+		/**/
+	}
+
+	.tmp_talker #outgoingMessage {
+		font-size: 0.8em;
+	}
+
+	.tmp_talker #messages .message .avatar {
+		width: 30px;
+	}
+
+	.tmp_talker #messages header {
+		height: 30px;
+	}
+	/*tmp_panel*/
+	main.tmp_panel section.inner_content {
+		padding: 0px !important;
+	}
+	main.tmp_panel section.inner_content .graph_control,
+	main.tmp_panel .nav_header .menu-heading{
+		
+		width: 40% !important;
+
+	}
+	main.tmp_panel section.inner_content .graph_control{
+
+		font-size: 0.8em;
+	}
+	main.tmp_panel section.inner_content #graph{
+
+		width: 60% !important;
+
+	}
+	/**/
+	main.tmp_panel.full_width .graph_control .display_control .button{
+		text-align: center;
+		text-indent: 0;
+		line-height: 1.4em;
+	}
+	/**/
+	main.tmp_panel section .graph_control {
+		margin-top: 42px !important;
+	}
+	/**/
+	main .nav_header .menu-heading,
+	main .nav_header .linear .button{
+		font-size: 0.8em;
+	}
+	main .nav_header {
+		height: 42px;
+	}
+
+}
+
+@media only screen and (max-width: 1200px) {
+	
+}
+
+@media only screen and (max-width: 1024px) { 
+	
+}
+
+@media only screen and (max-width: 1000px) { 
+
+}
+
+@media only screen and (max-width: 900px) { 
+
+	
+}
+
+@media only screen and (max-width: 800px) {
+
+
+
+}
+
+@media only screen and (max-width: 768px) { 
+
+}
+
+@media only screen and (max-width: 720px) { 
+	
+
+
+}
+
+@media only screen and (max-width: 500px) { 
+	header .btn.mobile {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 480px) { 
+
+}
+
+@media only screen and (max-width: 400px) {
+
+}
+
+@media only screen and (max-width: 320px) { 
+
+}
+
+/* MIN */
+@media only screen and (min-width: 800px) { 
+
+}
+
+@media only screen and (min-width: 1024px) { 
+	
+}
+
+@media only screen and (min-width: 1200px) {
+	body.temp-01 aside.sidebar {
+		float: left;
+		width: 20%;
+	}
+	body.temp-01 > header{
+		margin-left: 20%;
+	}
+}
+
+@media only screen and (min-width: 1300px) {
+
+}
+

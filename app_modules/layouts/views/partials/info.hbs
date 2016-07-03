@@ -1,0 +1,22 @@
+<div class='infobar'>
+	<div>
+		<b>Session</b>
+		<p>name: <b>{{userdata.name}}</b></p>
+		<p>email: <b>{{userdata.email}}</b></p>
+		<p>country: <b>{{userdata.country}}</b></p>
+		<p>username: <b>{{userdata.username}}</b></p>
+		<p>password: <b>{{userdata.password}}</b></p>
+		<p>userid: <b>{{userdata.userid}}</b></p>
+		
+		<b>Cookie</b>
+		{{#each usercookies}}
+			{{#each this}}
+				<p>{{@key}}: <b>{{this}}</b></p>
+			{{/each}}
+		{{/each}}
+	</div>
+	<div class="alert_log">
+		<b>Alert Log</b>
+		<p></p>
+	</div>
+</div>

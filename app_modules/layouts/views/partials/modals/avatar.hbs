@@ -1,0 +1,76 @@
+<dialog class="modal-avatar modal hide fade" id='avatar-choose'>
+
+	<header>
+
+		<button data-dismiss="modal" class="close button"></button>
+		<h3>Profile Picture</h3>
+
+	</header>
+	<article class="two_button"> 
+	
+		<div class="imageBox">
+
+			<div class="thumbBox">
+				<div class="spinner" style="display: none"></div>
+			</div>
+			<div class='ui_avatar'>
+				<div class='button small zoom_in'>+</div>
+				<div class='button small zoom_out'>-</div>
+				<div class='button small zoom_zero'>1:1</div>
+				<div class='button discrete disabled small zoom_status'></div>
+
+			</div>
+			<div class='ghost'></div>
+			<div class='ghast'></div>
+			<div class='g_top'></div>
+			<div class='g_bottom'></div>
+			<div class='g_left'></div>
+			<div class='g_right'></div>
+
+			<div class='ray'></div>
+		</div>
+
+		<div class="cropped">
+
+		</div>
+
+		<form id="add-avatar-form"
+			enctype="multipart/form-data"
+			action="/uploads/avatar?action=avatar_upload"
+			method="post">
+
+			<div class="button select_picture">
+				Select Profile Picture
+				<input id="imgInp" class='button' type="file" name="user_avatar" accept="image/*">
+			</div>
+			
+			<div class="progress">
+				<div class='bar'></div>
+			</div>
+
+			<div id='previewImg'></div>
+
+			<button 
+				data-dismiss="modal" 
+				class="cancel button discrete">
+				Cancel
+			</button>
+			<button 
+				id="ok"
+				class="button btnCrop"
+				type="button">
+				OK
+			</button>
+
+		</form>
+
+	</article>
+
+	<footer>
+
+		<div class="alert inline-alert hide"></div>
+
+	</footer>
+
+</dialog>
+

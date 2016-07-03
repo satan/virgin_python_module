@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>{{> menu/title}}</title>
+	{{> head}}
+	<script type="text/javascript" src="/public/socket.io/socket.io.js"></script>
+</head>
+<body>
+	{{> menu/nav}}
+	<main class='tmp_python tmp_sidebar'>
+		{{{body}}}
+	</main>
+	<footer data-module-name="{{module_name}}" data-module-version="{{module_version}}"></footer>
+	
+</body>
+</html>

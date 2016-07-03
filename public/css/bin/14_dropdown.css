@@ -1,0 +1,112 @@
+nav[role="select"]:before{
+
+	content: "";
+	font-size: 1.5em;
+	height: 100%;
+	line-height: 0.5em;
+	padding: 0;
+	pointer-events: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 2em;
+}
+nav[role="dropdown"] {
+    display: block;
+    float: left;
+    height: inherit;
+    line-height: inherit;
+    position: relative;
+
+}
+nav[role="dropdown"] label:after{
+	display: block;
+	width: 40px;
+	height: 100%;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	content: '▾';
+	color: #eee;
+	font-size: 1em;
+}
+
+nav[role='dropdown'] label, 
+nav[role='dropdown'] ul li{
+	display: table;
+	width: auto;
+	padding: 0 2%;
+}
+nav[role='dropdown'] a {
+	padding: 0 1em;
+	width: 100%;
+}
+nav[role='dropdown'] ul {
+	background: #444;
+}
+nav[role='dropdown'] label:hover, nav[role='dropdown'] ul li:hover{
+	cursor: pointer;
+	background: #000;
+	color: #fff;
+}
+
+nav[role='dropdown'] label {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+	color: #777;
+	padding: 0 3em 0 1em;
+
+	width: 100%;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+
+	margin: 0;
+
+	height: inherit;
+	line-height: inherit;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+nav[role='dropdown'] input{
+	display: none;
+}
+nav[role='dropdown'] input ~ ul{
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	width: auto;
+	min-width: 100%;
+	z-index: 1;
+}
+nav[role='dropdown'] input:checked + label{
+	background: #555;
+	color: white;
+}
+
+nav[role='dropdown'] input:checked ~ ul{
+	visibility: visible;
+	opacity: 1;
+}
+
+nav[role='dropdown'] a{
+	display: table;
+	clear: both;
+	float: left;
+	width: 100%;
+}
+nav[role='dropdown'] ul li {
+	padding:0;
+	width: 100%;
+}
+
+nav[role='dropdown'] ul li:last-of-type,
+nav[role='dropdown'] ul li:last-of-type a,
+nav[role='dropdown'] input:checked ~ ul{
+
+	border-radius: 0px 0px 3px 3px;
+
+}

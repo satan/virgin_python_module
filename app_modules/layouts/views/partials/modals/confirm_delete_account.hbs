@@ -1,0 +1,43 @@
+<dialog class="modal-confirm-delete modal hide fade" id='delete-account'>
+
+	<header>
+
+		<button data-dismiss="modal" class="close button"></button>
+		<h3>Delete Account</h3>
+	
+	</header>
+	<article class='two_button'>
+
+		<form id="delete-account-form" method="post">
+
+			<label>Confirm Ownership</label>
+			<input 
+				type='password'
+				id='pass-tf'
+				name='password'
+				placeholder='Password'
+				class='required'
+				data-length='6'>
+
+			<button 
+				data-dismiss="modal" 
+				class="cancel button discrete">
+				Cancel
+			</button>
+
+			<button 
+				id="btn-delete" 
+				class="submit button" 
+				type="submit">
+				Delete
+			</button>
+
+		</form>
+
+	</article>
+	<footer>
+
+		<div class='alert inline-alert hide'></div>
+	
+	</footer>
+</dialog>
