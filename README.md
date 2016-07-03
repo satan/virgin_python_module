@@ -20,6 +20,6 @@ NodeJS Version
 
 * Join me for a chat **https://gitter.im/satan/virgin**
 
-### Who do I talk to? ###
+### Contributors Posted Here ###
 
 * Don't Forget to add yourself to the **contributors.txt**
